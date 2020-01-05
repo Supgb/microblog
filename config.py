@@ -19,4 +19,5 @@ class Config(object):
     ADMINS = ['supgb96@gmail.com',
               '522620643@qq.com']
     
-    
+    # Posts per page configuration
+    POSTS_PER_PAGE = 3
