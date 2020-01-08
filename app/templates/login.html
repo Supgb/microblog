@@ -11,9 +11,10 @@
 	<span style="color: red;">[{{ error }}]</span>
 	{% endfor %}
     </p>
-    <p>
+    <>
 	{{ form.password.label }}<br>
-	{{ form.password(size=32) }}<br>
+	{{ form.password(size=32) }}
+    <a href="{{ url_for('reset_password_request') }}">Forgot Your Password?</a><br>
 	{% for error in form.username.errors %}
 	<span style="color: red;">[{{ error }}]</span>
 	{% endfor %}
